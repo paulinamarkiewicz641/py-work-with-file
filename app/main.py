@@ -24,4 +24,4 @@ def create_report(data_file_name: str, report_file_name: str) -> None:
     ]
 
     with open(report_file_name, "w") as file:
-        file.write("\n".join(report_lines))
+        file.write("\n".join(report_lines) + "\n")
