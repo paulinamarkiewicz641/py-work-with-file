@@ -18,9 +18,9 @@ def create_report(data_file_name: str, report_file_name: str) -> None:
 
     result: int = supply_total - buy_total
     report_lines: list[str] = [
-        f'supply,{supply_total}',
-        f'buy,{buy_total}',
-        f'result,{result}'
+        f"supply,{supply_total}",
+        f"buy,{buy_total}",
+        f"result,{result}"
     ]
 
     with open(report_file_name, "w") as file:
