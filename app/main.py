@@ -17,7 +17,7 @@ def create_report (data_file_name: str, report_file_name: str) -> None:
             elif operation == 'buy':
                 buy_total += amount
 
-    result: int = supply_t0tal - buy_total
+    result: int = supply_total - buy_total
     report_lines: list[str] = [
         f'supply,{supply_total}',
         f'buy,{buy_total}',
